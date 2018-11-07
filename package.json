@@ -16,7 +16,7 @@
     "test:watch": "mocha --watch $npm_package_config_mocha",
     "codecov": "nyc report --reporter=text-lcov > coverage.lcov; codecov",
     "commitmsg": "commitlint -e $GIT_PARAMS",
-    "precommit": "npm run lint && npm run prettier && flow",
+    "precommit": "npm run lint && npm run prettier:check && flow",
     "prepush": "npm test",
     "prepublishOnly": "npm run lint && flow && npm test",
     "open:coverage": "open coverage/lcov-report/index.html",
