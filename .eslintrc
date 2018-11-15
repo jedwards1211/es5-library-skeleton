@@ -1,8 +1,12 @@
 {
   "extends": [
-    "@jedwards1211/eslint-config-es5", "@jedwards1211/eslint-config-flow"
+    "@jedwards1211/eslint-config-es5", "@jedwards1211/eslint-config-flow",
+    "eslint-config-prettier"
   ],
-  "ecmaVersion": 5,
+  "parserOptions": {
+    "ecmaVersion": 5,
+    "sourceType": "script"
+  },
   "env": {
     "es6": false,
     "shared-node-browser": true
